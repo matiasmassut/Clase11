@@ -3,68 +3,86 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="shortcut icon" href="../assets/img/favicon.svg">
 	<title>Matias Massut</title>
 </head>
 <body>
-	<!-- Isotipo y NavBar --> 
-	<header>
-		<a class="navbar-logo" href="../index.html"><img src="../assets/img/logo.svg" alt="Logo"></a>
-		<nav>
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../pages/about.html">About</a></li>
-				<li><a href="../pages/projects.html">Projects</a></li>
-				<li><a href="../pages/services.html">Services</a></li>
-				<li><a href="../pages/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!-- Cierre Isotipo y NavBar -->
-	<!-- Welcome -->
-	<section class="welcome-contact">
-			<h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id maximus ligula. Cras mattis neque eu mi sollicitudin rutrum. Maecenas faucibus rutrum tempus. In semper malesuada vehicula. Etiam commodo vestibulum tellus vitae faucibus. Vestibulum sed pellentesque sapien, eu tincidunt ante. </p>
-	</section>
-    <!-- Cierre Welcome -->
+	<div class="container-fluid">
+		<header class="row">
+			<nav class="navbar navbar-expand-lg ">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="index.html"> <img src="../assets/img/logo.svg" alt="Logo"></a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+					  <li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="../pages/about.html">About</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="../pages/pages/projects.html">Projects</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="../pages/pages/services.html">Services</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="../pages/pages/contact.html">Contact</a>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </nav>
+		</header>
+		<main>
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<h2>Let's talk</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur ante et eros pellentesque facilisis.
 
-    <!-- Form -->
-	<section class="form-contact">
-        <form action="#">
-            <label for="fname">First name:<input id="fname" type="text" placeholder="John" name="fname"></label><br><br>
-            <label for="lname">Last name:<input id="lname" type="text" placeholder="Doe" name="lname"></label><br><br>
-            <label for="email">Email:<input id="email" type="email" placeholder="email@gmail.com" name="email"></label><br><br>
-            <label for="services">Interested in:</label>
-            <select id="services" name="services">
-                <option value="none">Choose a option</option>
-                <option value="ux">UX/UI Design</option>
-                <option value="graphix">Graphic Design</option>
-                <option value="web">Web Design</option>
-            </select><br><br>
-            <label for="message">Leave your message:<br>
-                <textarea placeholder="Leave your message:" name="message" id="message" cols="30" rows="10"></textarea></label><br><br>
-            <input type="reset" value="Clean form">
-            <input type="submit" value="Submit">
-          </form>
-    </section>
-<!-- Cierre Form -->
-
-
-<!--Footer --> 
-	<footer class="footer">
-		<a class="footer-logo" href="../index.html"><img src="../assets/img/logo.svg" alt="Logo"></a>
-		<p class="copyright">© 2022 - All rights reserved.</p>
-        <ul>
-            <li>
-				<a class="linkedin" href="https://www.linkedin.com/in/matias-massut-a7453914a/"><img src="../assets/img/linkedin.svg"></a>
-				<a class="linkedin" href="https://www.instagram.com/matiasmassut/"><img src="../assets/img/instagram.svg"></a>
-			</li>
-        </ul>
-	</footer>
-<!--Cierre Footer -->
+						Donec vitae vehicula leo. Phasellus vulputate sapien at magna iaculis, sed luctus massa convallis.
+						
+						Donec vitae vehicula leo. Phasellus vulputate sapien at magna.</p>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+					  </div>
+					  <div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					  </div>
+						<a href="#">Send</a>
+					  </div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="row">
+				<div class="col-12 col-lg-4 text-start">
+					<a href="../index.html"> <img src="../assets/img/favicon.svg" alt="Logo"></a>
+				</div>
+				<div class="col-12 col-lg-4 text-center">
+					<p>© Matias Massut - 2022 - All right reserved</p>
+				</div>
+				<div class="col-12 col-lg-4 text-end">
+					<a href="../index.html" style="width: 50px;"> <img src="../assets/img/instagram.svg" alt="Logo"></a>
+					<a href="../index.html" style="width: 50px;"> <img src="../assets/img/linkedin.svg" alt="Logo"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
